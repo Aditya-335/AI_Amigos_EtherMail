@@ -1,72 +1,65 @@
-# 📩 *AetherMail*  
+# 📩 AetherMail
 
-## *Short Description*  
-AetherMail is an *AI-powered email management system* that helps users efficiently organize, prioritize, and respond to emails with smart automation features.  
-
----
-
-## *Are You Solving a Real-World Problem?* ✅  
-
-### *Problem*  
-Managing emails can be overwhelming, with important messages often buried under spam or low-priority emails.  
-People spend hours sorting, reading, and replying to emails, which affects productivity.  
-Without an intelligent system to categorize and manage emails effectively, users struggle to maintain an organized inbox.  
-
-### *Solution*  
-AetherMail leverages *AI* to streamline email management:  
-- ✅ Automatically categorizes emails  
-- ✅ Highlights priority messages  
-- ✅ Provides AI-generated insights and responses  
-
-This allows users to stay organized, save time, and focus on what matters most.  
+**AI-powered email management system** that helps users efficiently organize, prioritize, and respond to emails with smart automation features.
 
 ---
 
-## *Key Features*  
-✔ *Smart Inbox:* Automatically organizes emails based on priority  
-✔ *Priority Emails:* Identifies and highlights important messages  
-✔ *AI Insights:* Provides smart suggestions and auto-generated responses  
+## ✅ Real-World Problem
+
+### 📌 Problem
+Managing emails is time-consuming and overwhelming. Important messages often get buried under spam or low-priority content, leading to reduced productivity.
+
+### 💡 Solution
+AetherMail uses AI to:
+- ✅ Automatically categorize emails  
+- ✅ Highlight priority messages  
+- ✅ Provide AI-generated insights and responses  
+
+Stay organized, save time, and focus on what matters.
 
 ---
 
-## *What Kind of AI Model Are we Using?*  
-- 🏷 *Classification*  
-- ✍ *Generation*  
-- 🔍 *Extraction*  
+## 🚀 Key Features
+- ✔ **Smart Inbox** – Organizes emails based on priority  
+- ✔ **Priority Emails** – Highlights important messages  
+- ✔ **AI Insights** – Offers smart suggestions & auto-generated replies  
 
 ---
 
-## *Tech Stack Used*  
-🔹 *Backend:* Node.js, Express.js, Passport.js (Google Authentication)  
-🔹 *Frontend:* React, Tailwind CSS  
-🔹 *Database:* MongoDB  
+## 🤖 AI Models Used
+- 🏷 **Classification**  
+- ✍ **Generation**  
+- 🔍 **Extraction**  
 
 ---
 
-## *Screenshots*  
-
-| *Dashboard* | *AI Insights* |
-|--------------|---------------|
-|![Dashboard](https://github.com/user-attachments/assets/e603bfad-3177-4134-b8ac-b96f26a5aec8)|![AI Insights](https://github.com/user-attachments/assets/f93d8165-f3c8-44ef-b4a2-7effa12a5db7)|
-
+## 🛠 Tech Stack
+- **Frontend:** React, Tailwind CSS  
+- **Backend:** Node.js, Express.js, Passport.js (Google Auth)  
+- **Database:** MongoDB  
 
 ---
 
-## *Team Members*   
-👥 *Aditya Borhade*   
-👥 *Pranjal Gosavi*  
+## 🖼 Screenshots
+
+| Dashboard | AI Insights |
+|----------|-------------|
+| ![Dashboard](https://github.com/user-attachments/assets/e603bfad-3177-4134-b8ac-b96f26a5aec8) | ![AI Insights](https://github.com/user-attachments/assets/f93d8165-f3c8-44ef-b4a2-7effa12a5db7) |
 
 ---
 
-## 🚀 *How to Run AetherMail Locally*  
+## 👨‍💻 Team Members
+- Aditya Borhade  
+- Pranjal Gosavi  
 
-Follow these steps to set up and run the AetherMail project on your local system.  
+---
 
 ### 📥 *Step 1: Clone the Repository*  
 
-bash
+```bash
 git clone https://github.com/Aditya-335/AI_Amigos_EtherMail.git
 cd AI_Amigos_EtherMail
+```
 
 
 ---
@@ -75,17 +68,17 @@ cd AI_Amigos_EtherMail
 
 Navigate to the *backend directory* and install dependencies:  
 
-bash
+```bash
 cd server
 npm install
-
+```
 
 Navigate to the *frontend directory* and install dependencies:  
 
-bash
+```bash
 cd ../client
 npm install
-
+```
 
 ---
 
@@ -93,17 +86,17 @@ npm install
 
 1️⃣ *Run the Backend Server:*  
 
-bash
+```bash
 cd ../server
 npm start
-
+```
 
 2️⃣ *Run the Frontend Server:*  
 
-bash
+```bash
 cd ../client
 npm start
-
+```
 
 ---
 
