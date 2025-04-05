@@ -96,7 +96,7 @@ function LandingPage() {
   };
 
   const handleWatchDemoClick = () => {
-    window.open("https://www.loom.com/share/34f7cad2331840058c5ae9b4cddbf28b?sid=a8f525d3-8e4b-47ec-9a7b-896bad5e9efa", "_blank");
+    window.open("");
   };
 
   const toggleMobileMenu = () => {

@@ -41,7 +41,10 @@ app.use(
       "http://localhost:5174",
       "http://localhost:5174/content",
       "https://project-murex-seven.vercel.app/",
-      "https://project-murex-seven.vercel.app/content"
+      "https://ai-amigos-ethermail.onrender.com/get-emails",
+      "https://project-murex-seven.vercel.app/content",
+      "*",
+      "**"
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,

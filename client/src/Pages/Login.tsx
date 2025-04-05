@@ -14,7 +14,7 @@ export function Login() {
     e.preventDefault();
     setError('');
     try {
-      const response = await fetch('https://automailx-sm.onrender.com/login', {
+      const response = await fetch('https://ai-amigos-ethermail.onrender.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

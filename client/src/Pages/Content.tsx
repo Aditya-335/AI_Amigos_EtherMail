@@ -67,7 +67,7 @@ function Content() {
     setResponseError(null);
 
     
-    fetch("http://localhost:5000/get-emails", { 
+    fetch("https://ai-amigos-ethermail.onrender.com/get-emails", { 
       method: "GET",
       credentials: "include", // Important for sessions/cookies
       headers: { "Content-Type": "application/json" },
@@ -128,7 +128,7 @@ function Content() {
     // --- Fetch Summary ---
     setSummaryLoading(true);
     setSummary(null);
-    fetch("http://localhost:5000/summarize", { // Use your production URL
+    fetch("https://ai-amigos-ethermail.onrender.com/summarize", { // Use your production URL
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -165,7 +165,7 @@ function Content() {
     setIsEditingResponse(false); // Exit edit mode if starting new generation
 
     try {
-      const res = await fetch("http://localhost:5000/generate-response", { // Use production URL
+      const res = await fetch("https://ai-amigos-ethermail.onrender.com/generate-response", { // Use production URL
         method: "POST",
         headers: {
           "Content-Type": "application/json",

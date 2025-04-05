@@ -1,28 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { AuthLayout } from '../Components/AuthLayout'; // Assuming this provides the themed background/layout
-import { motion } from 'framer-motion'; // Import motion
-import { Loader2 } from 'lucide-react'; // Using Lucide for loading spinner
+import { AuthLayout } from '../Components/AuthLayout'; 
+import { motion } from 'framer-motion'; 
+import { Loader2 } from 'lucide-react';
 
-// Assuming AuthLayout.tsx looks something like this conceptually:
-/*
-import { FloatingShape } from './FloatingShape'; // Import if using the same background effect
 
-export function AuthLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="min-h-screen font-sans bg-gradient-to-br from-cyan-50 via-white to-purple-50 text-gray-800 overflow-hidden relative flex items-center justify-center p-4">
-      {/* Background Floating Shapes - Optional: Move this logic inside if desired *}
-      <FloatingShape initialX="-10vw" initialY="20vh" delay={0} duration={15} size="400px" colorFrom="from-cyan-200" colorTo="to-blue-200" />
-      <FloatingShape initialX="70vw" initialY="10vh" delay={2} duration={18} size="350px" colorFrom="from-purple-200" colorTo="to-pink-200" />
-      { // Add more shapes if needed }
-      *
-      <main className="relative z-10 w-full max-w-md">
-        {children}
-      </main>
-    </div>
-  );
-}
-*/
 
 const SignUp=()=> {
   const [formData, setFormData] = useState({
@@ -43,14 +25,14 @@ const SignUp=()=> {
       setError('Passwords do not match.');
       return;
     }
-    if (formData.password.length < 6) { // Basic validation example
+    if (formData.password.length < 6) { 
         setError('Password must be at least 6 characters long.');
         return;
     }
 
     try {
       setLoading(true);
-      const response = await fetch('https://automailx-sm.onrender.com/signup', {
+      const response = await fetch('https://ai-amigos-ethermail.onrender.com/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -59,27 +41,28 @@ const SignUp=()=> {
           username: formData.username,
           email: formData.email,
           password: formData.password,
-          confirmPassword: formData.confirmPassword, // Usually backend only needs 'password'
+          confirmPassword: formData.confirmPassword, 
         }),
       });
 
       const data = await response.json();
 
-      console.log('Signup attempt for:', formData.email); // Log less sensitive data
+      console.log('Signup attempt for:', formData.email); 
 
       if (!response.ok) {
-        // Improve error handling - check for specific messages
+        
         throw new Error(data.message || `Sign-up failed (Status: ${response.status})`);
       }
 
-      // Optional: Show success message briefly before redirecting
+     
       console.log("Signup successful:", data);
-      navigate('/login'); // Redirect to login on success
+      navigate('/login'); 
 
+   
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
-       console.error("Signup Error:", err); // Log the actual error
-      // Provide user-friendly messages
+       console.error("Signup Error:", err); 
+      
       if (err.message.includes('already exists')) {
         setError('An account with this email or username already exists.');
       } else if (err.message.includes('failed (Status: 5')) {
@@ -95,7 +78,7 @@ const SignUp=()=> {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    // Clear error when user types
+   
     if (error) setError('');
   };
 
@@ -130,14 +113,14 @@ const SignUp=()=> {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
               className="text-red-600 bg-red-100 border border-red-300 rounded-md text-sm p-3 text-center mb-6"
-              role="alert" // Added for accessibility
+              role="alert" 
             >
               {error}
             </motion.p>
         )}
 
         <form onSubmit={handleSubmit} className="space-y-5">
-          {/* Username Input */}
+         
           <div>
             <label htmlFor="username" className="block text-sm font-medium text-gray-700 mb-1.5">
               Username
@@ -155,7 +138,7 @@ const SignUp=()=> {
             />
           </div>
 
-          {/* Email Input */}
+       
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1.5">
               Email address
@@ -164,7 +147,7 @@ const SignUp=()=> {
               id="email"
               name="email"
               type="email"
-              autoComplete="email" // Helps with browser autofill
+              autoComplete="email" 
               required
               value={formData.email}
               onChange={handleChange}
@@ -174,7 +157,7 @@ const SignUp=()=> {
             />
           </div>
 
-          {/* Password Input */}
+       
           <div>
             <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1.5">
               Password
@@ -183,9 +166,9 @@ const SignUp=()=> {
               id="password"
               name="password"
               type="password"
-              autoComplete="new-password" // Important for password managers
+              autoComplete="new-password" 
               required
-              minLength={6} // HTML5 validation
+              minLength={6} 
               value={formData.password}
               onChange={handleChange}
               className="w-full px-4 py-2.5 rounded-lg bg-white border border-gray-300 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none transition duration-200 text-gray-800 placeholder-gray-400 shadow-sm"
@@ -194,7 +177,7 @@ const SignUp=()=> {
             />
           </div>
 
-          {/* Confirm Password Input */}
+   
           <div>
             <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-700 mb-1.5">
               Confirm Password
@@ -238,4 +221,4 @@ const SignUp=()=> {
   );
 }
 
-export default SignUp; // Remove if you export directly like above
+export default SignUp; 
