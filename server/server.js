@@ -43,6 +43,7 @@ app.use(
       "https://project-murex-seven.vercel.app/",
       "https://ai-amigos-ethermail.onrender.com/get-emails",
       "https://project-murex-seven.vercel.app/content",
+      "https://client-sigma-woad.vercel.app/",
       "*",
       "**"
     ],
