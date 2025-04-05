@@ -21,24 +21,35 @@ interface FloatingShapeProps {
 function FloatingShape({ initialX, initialY, delay, duration, size, colorFrom, colorTo }: FloatingShapeProps) {
   return (
     <motion.div
-      className={`absolute rounded-full opacity-30 mix-blend-multiply filter blur-3xl -z-10 bg-gradient-to-br ${colorFrom} ${colorTo}`}
-      style={{ width: size, height: size }}
-      initial={{ x: initialX, y: initialY, scale: 0.8, opacity: 0 }}
-      animate={{
-        x: [initialX, `${parseFloat(initialX as string)}${initialX.toString().includes('vw') ? 'vw' : 'px'} + 50px`, `${parseFloat(initialX as string)}${initialX.toString().includes('vw') ? 'vw' : 'px'} - 30px`, initialX] as unknown,
-        y: [initialY, `${parseFloat(initialY as string)}${initialY.toString().includes('vh') ? 'vh' : 'px'} - 40px`, `${parseFloat(initialY as string)}${initialY.toString().includes('vh') ? 'vh' : 'px'} + 60px`, initialY] as unknown,
-        rotate: [0, 90, -60, 0],
-        scale: [0.8, 1.1, 0.9, 1],
-        opacity: [0, 0.3, 0.4, 0.3],
-      }}
-      transition={{
-        duration: duration,
-        ease: "easeInOut",
-        repeat: Infinity,
-        repeatType: "mirror",
-        delay: delay,
-      }}
-    />
+  className={`absolute rounded-full opacity-30 mix-blend-multiply filter blur-3xl -z-10 bg-gradient-to-br ${colorFrom} ${colorTo}`}
+  style={{ width: size, height: size }}
+  initial={{ x: initialX, y: initialY, scale: 0.8, opacity: 0 }}
+  animate={{
+    x: [
+      initialX,
+      `${parseFloat(initialX.toString()) + 50}${initialX.toString().includes('vw') ? 'vw' : 'px'}`,
+      `${parseFloat(initialX.toString()) - 30}${initialX.toString().includes('vw') ? 'vw' : 'px'}`,
+      initialX,
+    ],
+    y: [
+      initialY,
+      `${parseFloat(initialY.toString()) - 40}${initialY.toString().includes('vh') ? 'vh' : 'px'}`,
+      `${parseFloat(initialY.toString()) + 60}${initialY.toString().includes('vh') ? 'vh' : 'px'}`,
+      initialY,
+    ],
+    rotate: [0, 90, -60, 0],
+    scale: [0.8, 1.1, 0.9, 1],
+    opacity: [0, 0.3, 0.4, 0.3],
+  }}
+  transition={{
+    duration: duration,
+    ease: "easeInOut",
+    repeat: Infinity,
+    repeatType: "mirror",
+    delay: delay,
+  }}
+/>
+
   );
 }
 // --- End FloatingShape Definition ---
