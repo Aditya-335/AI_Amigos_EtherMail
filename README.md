@@ -129,12 +129,12 @@ You're all set to use *AetherMail* locally! 🚀
 ---
 
 ## 🌍 *Live Application*  
-- *Frontend:* [AetherMail Frontend](https://ai-amigos-ethermail.vercel.app)  
+- *Frontend:* [AetherMail Frontend](https://client-sigma-woad.vercel.app/)  
 - *Backend:* [AetherMail Backend](https://ai-amigos-ethermail.onrender.com)  
 
 ---
 
 ## 🎥 *Video Demonstration*  
-📹 [Video-walkthrough]()  
+📹 [Video-walkthrough](https://drive.google.com/file/d/19NFnO6_99n7fVLOc3RMh2ytdF8E5AGR9/view?usp=sharing)  
 
 ---
