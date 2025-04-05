@@ -47,8 +47,7 @@ This allows users to stay organized, save time, and focus on what matters most.
 
 | *Dashboard* | *AI Insights* |
 |--------------|---------------|
-|![Dashboard](https://github.com/user-attachments/assets/e603bfad-3177-4134-b8ac-b96f26a5aec8)|
-![AI Insights](https://github.com/user-attachments/assets/f93d8165-f3c8-44ef-b4a2-7effa12a5db7)|
+|![Dashboard](https://github.com/user-attachments/assets/e603bfad-3177-4134-b8ac-b96f26a5aec8)|![AI Insights](https://github.com/user-attachments/assets/f93d8165-f3c8-44ef-b4a2-7effa12a5db7)|
 
 
 ---
