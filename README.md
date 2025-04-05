@@ -4,32 +4,32 @@
 
 ---
 
-## ✅ Real-World Problem
+##  Real-World Problem
 
 ### 📌 Problem
 Managing emails is time-consuming and overwhelming. Important messages often get buried under spam or low-priority content, leading to reduced productivity.
 
 ### 💡 Solution
 AetherMail uses AI to:
-- ✅ Automatically categorize emails  
-- ✅ Highlight priority messages  
-- ✅ Provide AI-generated insights and responses  
+-  Automatically categorize emails  
+-  Highlight priority messages  
+-  Provide AI-generated insights and responses  
 
 Stay organized, save time, and focus on what matters.
 
 ---
 
 ## 🚀 Key Features
-- ✔ **Smart Inbox** – Organizes emails based on priority  
-- ✔ **Priority Emails** – Highlights important messages  
-- ✔ **AI Insights** – Offers smart suggestions & auto-generated replies  
+-  **Smart Inbox** – Organizes emails based on priority  
+-  **Priority Emails** – Highlights important messages  
+-  **AI Insights** – Offers smart suggestions & auto-generated replies  
 
 ---
 
 ## 🤖 AI Models Used
-- 🏷 **Classification**  
-- ✍ **Generation**  
-- 🔍 **Extraction**  
+-  **Classification**  
+-  **Generation**  
+-  **Extraction**  
 
 ---
 
